@@ -603,14 +603,14 @@ footer {
       .road {
         ul {
           &:nth-child(odd) div {
-            left: -270px;
+            left: -370px;
             &::after {
               position: absolute;
               content: "";
               border: solid;
               border-width: 8px 8px 8px 16px;
               border-color: transparent transparent transparent $arrow;
-              left: 242px;
+              left: 345px;
             }
           }
           &:nth-child(even) div {
@@ -626,7 +626,7 @@ footer {
             }
           }
           div {
-            width: 250px;
+            width: 350px;
           }
         }
       }
@@ -634,16 +634,6 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .language-a,
-  .language-b {
-    .cent {
-      & > div {
-        grid-template-columns: 1fr;
-      }
-    }
-  }
-}
-@media (max-width: 1280px) {
   .main-a {
     & > div {
       margin: auto;
@@ -693,14 +683,14 @@ footer {
           }
           // LEFT RIGHT
           &:nth-child(odd) div {
-            left: -470px;
+            left: -320px;
             &::after {
               position: absolute;
               content: "";
               border: solid;
               border-width: 8px 8px 8px 16px;
               border-color: transparent transparent transparent $arrow;
-              left: 444px;
+              left: 298px;
             }
           }
           &:nth-child(even) div {
@@ -733,12 +723,27 @@ footer {
           }
           div {
             position: relative;
-            width: 450px;
+            width: 300px;
             background-color: $idk;
             padding: 20px;
           }
         }
       }
     }
+    .language-a,
+    .language-b {
+      .cent {
+        & > div {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 830px) {
+  footer {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
   }
 }
